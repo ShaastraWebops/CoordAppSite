@@ -4,7 +4,7 @@ var departments = {
 	"Evolve": "Evolve", 
 	"Events": "Events", 
 	"Finance": "Finance",
-	"O&IP": "O&IP",
+	"Operations and Infrastructure Planning": "O&IP",
 	"Media and Student Relations": "M&SR",
 	"QMS": "QMS", 
 	"Shows and Exhibitions": "Shows", 
@@ -117,7 +117,7 @@ var apps = {
 		}
 	},
 	
-	"O&IP":{
+	"Operations and Infrastructure Planning":{
 		"Operations Head": {
 			name: "Operations Head",
 			app_name: "O&IP_OperationsHead_Application_Shaastra2018"
@@ -141,10 +141,10 @@ var apps = {
 			name: "Coordinator Application",
 			app_name: "M_SR_Coordinator_Application_Shaastra2018"
 		},
-		"Strategist": {
+		/*"Strategist": {
 			name: "Strategist",
 			app_name: ""
-		}
+		}*/
 	},
 
 	"QMS":{
