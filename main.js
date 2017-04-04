@@ -180,7 +180,7 @@ var apps = {
 			app_name: "Exhibitions_Coordinator"
 		},
 		"Tech and Innovation Fair Coordinator": {
-			name: "Tech and Innovation Fair Super Coordinator",
+			name: "Tech and Innovation Fair Coordinator",
 			app_name: "Tech_n_Innovation_Fair_Coordinator"
 		},
 		"Tech Creation Coordinator": {
