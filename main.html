@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="CoordApps">
+<head>
+	<title>Shaastra 2018 Coordinator Apps</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+</head>
+<body ng-controller='app-controller as Ctrl'>
+<!-- <div class="logo"></div>
+ -->
+ <div class="horizontal">
+<img src="logo.png">
+ <h1 style="margin-top:-80px;">Shaastra 2018 Coordinator Apps</h1>
+	<div class="horizontal margin1">
+		<div class="item margin2">
+			<label style="margin-right : 15px;">Department :</label>
+			<select id="dept" ng-click="Ctrl.setDept()" height="100px">
+				<option class="text">--Select Department--</option>
+				<option ng-repeat="(key,val) in Ctrl.depts">{{key}}</option>
+			</select>
+		</div>
+	
+		<div class="item margin2">
+			<label style="margin-right : 15px;">Position :</label>
+			<select id="position">
+				<option>--Select Position--</option>
+				<option ng-repeat="(key,value) in Ctrl.app[Ctrl.department]">{{value.name}}</option>
+			</select>
+		</div>
+	
+		<button ng-click="Ctrl.showPDF()" style="width:70px; font-size:18px;"  class="btn btn-primary">Get</button>
+	<div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="main.js"></script>
+</div>
+</body>
+</html>

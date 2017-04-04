@@ -1,0 +1,33 @@
+
+.horizontal{
+	text-align: center;
+	
+}
+
+.item{
+	padding: 0px 50px;
+}
+
+.vertical{
+	vertical-align: center;
+}
+
+.margin1{
+	margin-top: 10px;
+}
+
+.margin2{
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+label,option, input { font-size: 18px;}
+
+/*
+.logo{
+	background-image: url("logo.png");
+	height: 200px;
+	width: 200px;
+
+}
+*/
