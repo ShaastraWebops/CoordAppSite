@@ -10,7 +10,6 @@ var departments = {
 	"Shows and Exhibitions": "Shows", 
 	"Sponsorship and Public Relations": "Spons", 
 	"Webops": "Webops", 
-	"ICT" :"ICT"
 };
 
 var apps = {
