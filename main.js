@@ -257,9 +257,11 @@ app.controller('app-controller', function($scope){
 	this.app = apps;
 	this.path = '';
 	this.posts = [];
+	this.initValue = "--Select Department--";
 	var department, position;
 
 	this.setDept = function(){
+		console.log('comes here');
 		this.department = document.getElementById('dept').value;
 	};
 

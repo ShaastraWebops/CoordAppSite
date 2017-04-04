@@ -6,16 +6,15 @@
 	<link rel="stylesheet" type="text/css" href="bootstrap.css">
 </head>
 <body ng-controller='app-controller as Ctrl'>
-<!-- <div class="logo"></div>
- -->
+
  <div class="horizontal">
 <img src="logo.png">
  <h1 style="margin-top:-80px;">Shaastra 2018 Coordinator Apps</h1>
 	<div class="horizontal margin1">
 		<div class="item margin2">
 			<label style="margin-right : 15px;">Department :</label>
-			<select id="dept" ng-click="Ctrl.setDept()" height="100px">
-				<option class="text">--Select Department--</option>
+			<select id="dept" ng-model="Department" ng-init="Department = Ctrl.initValue" ng-change="Ctrl.setDept()" height="100px" autocomplete='off'>
+				<option selected="selected">--Select Department--</option>
 				<option ng-repeat="(key,val) in Ctrl.depts">{{key}}</option>
 			</select>
 		</div>
