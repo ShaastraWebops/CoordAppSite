@@ -23,11 +23,23 @@
 
 label,option, input { font-size: 18px;}
 
-/*
-.logo{
-	background-image: url("logo.png");
-	height: 200px;
-	width: 200px;
-
+table {
+	width: 100%;
+	margin-top: 16px;
 }
-*/
+table, th, td{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+td{
+	width: 200px;
+	text-align: center;
+}
+
+table tr:nth-child(even) {
+    background-color: #bbbbbb;
+}
+table tr:nth-child(odd) {
+    background-color: #;
+}

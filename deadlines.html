@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="CoordApps">
+<head>
+	<title>Deadlines</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body ng-controller="app-controller as Ctrl" class="horizontal">
+<h1>Deadlines for submitting Coordinator Applications</h1>
+<table ng-repeat="(key, val) in Ctrl.depts">
+	<tr>
+		<td rowspan="9"><b>{{key}}</b></td>
+	</tr>
+	<tr ng-repeat="(k, v) in Ctrl.app[key]">
+		<td>{{v.name}}</td>
+		<td>{{v.date}}</td>
+	</tr>
+</table>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
