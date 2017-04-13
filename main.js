@@ -1,15 +1,48 @@
 var departments = {
-	"Concept and Design" : "CD", 
-	"Envisage": "Envisage", 
-	"Evolve": "Evolve", 
-	"Events": "Events", 
-	"Finance": "Finance",
-	"Operations and Infrastructure Planning": "O&IP",
-	"Media and Student Relations": "M&SR",
-	"QMS": "QMS", 
-	"Shows and Exhibitions": "Shows", 
-	"Sponsorship and Public Relations": "Spons", 
-	"Webops": "Webops", 
+	"Concept and Design" : {
+		name: "CD",
+		emails: ["anshul", "vaibhav"]
+	},
+	"Envisage": {
+		name: "Envisage",
+		emails: ["abhishek.kelkar", "deepanath"]
+	},
+	"Evolve": {
+		name: "Evolve",
+		emails: ["gv", "vamsikrishna"]
+	},
+	"Events": {
+		name: "Events",
+		emails: ["satish", "ashmon"]
+	},
+	"Finance": {
+		name: "Finance",
+		emails: ["vishakhvnadh", "nitin", "prashanth"]
+	},
+	"Operations and Infrastructure Planning": {
+		name: "O&IP",
+		emails: ["shrigopala", "daanishga"]
+	},
+	"Media and Student Relations": {
+		name: "M&SR",
+		emails: ["sundarsri", "amritesh"]
+	},
+	"QMS": {
+		name: "QMS",
+		emails: ["narayanan", "anjali.lal"]
+	}, 
+	"Shows and Exhibitions": {
+		name: "Shows", 
+		emails: ["hitesh.malla"]
+	},
+	"Sponsorship and Public Relations": {
+		name: "Spons",
+		emails: ["shubham", "aravind"]
+	}, 
+	"Webops": {
+		name: "Webops",
+		emails: ["kulan", "vikranth"]
+	}
 };
 
 var apps = {
@@ -322,7 +355,7 @@ app.controller('app-controller', function($scope){
 
 		if(!(d === '--Select Department--' && p === '--Select Position--'))
 		{
-			path = './uploads/'+departments[d]+'/'+apps[d][p]["app_name"]+'.pdf';
+			path = './uploads/'+departments[d].name+'/'+apps[d][p]["app_name"]+'.pdf';
 			var win = window.open(path, '_blank');
 			win.focus();
 		}

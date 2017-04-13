@@ -9,6 +9,7 @@
 <table ng-repeat="(key, val) in Ctrl.depts">
 	<tr>
 		<td rowspan="9"><b>{{key}}</b></td>
+		<td rowspan="9"><p ng-repeat="email in val.emails">{{email}}@shaastra.org</p></td>
 	</tr>
 	<tr ng-repeat="(k, v) in Ctrl.app[key]">
 		<td>{{v.name}}</td>
