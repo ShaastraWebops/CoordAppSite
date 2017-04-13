@@ -1,7 +1,7 @@
 var departments = {
 	"Concept and Design" : {
 		name: "CD",
-		emails: ["anshul", "vaibhav"]
+		emails: ["anshulkumar", "vaibhav"]
 	},
 	"Envisage": {
 		name: "Envisage",

@@ -12,6 +12,10 @@
 	vertical-align: center;
 }
 
+.bgcolor{
+	background-color: #EDEDED;
+}
+
 .label{
 	background-color: #5bc0d3;
 }
@@ -31,6 +35,9 @@
 	margin-top: -50px;
 }
 
+body{
+	background-color: #EDEDED;
+}
 label,option, input { font-size: 18px;}
 
 table {
@@ -67,4 +74,8 @@ a:visited {
 
 li{
 	padding: 2px;
+}
+
+#main{
+	width: 100%;
 }

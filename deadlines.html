@@ -5,22 +5,9 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body ng-controller="app-controller as Ctrl">
-<h1 class="horizontal">Coordinator App Submission</h1>
-<div style="margin: 30px;">
-		<h3>Submission Guidelines</h3>
-		<ol>
-			<li>Recent grade card needs to be attached in the application. Workflow screenshots are also acceptable.</li>
-			<li>Submit your apps only in PDF format.</li>
-			<li>Name your application as <b>Name_RollNum_Department_SubDepartment.pdf</b></li>
-			<li>There are two steps in the submission process.
-				<ul>
-					<li>Mail your apps to the corresponding cores whose details can be found <a href="#" ng-click="Ctrl.show()">here</a>.</li>
-					<li>Fill the <a href="https://goo.gl/forms/5ipkBSBsZpygL6SE2" target="_blank">form</a>. Smail login is needed to fill the form.</li>
-				</ul>
-			</li>
-		</ol>
-	</div>
-<div ng-show="Ctrl.display">
+<div id="main">
+
+<div>
 <h2 class="horizontal">Contact Details and deadlines for submitting Coordinator Applications</h2>
 <table>
 	<tr>
@@ -40,6 +27,7 @@
 		<td>{{v.date}}</td>
 	</tr>
 </table>
+</div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <script src="main.js"></script>
