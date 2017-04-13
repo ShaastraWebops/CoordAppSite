@@ -12,6 +12,12 @@
 	vertical-align: center;
 }
 
+.label{
+	background-color: #5bc0d3;
+}
+.margin3{
+	margin-left: 50px;
+}
 .margin1{
 	margin-top: 10px;
 }
@@ -19,6 +25,10 @@
 .margin2{
 	margin-top: 25px;
 	margin-bottom: 25px;
+}
+
+.margin4{
+	margin-top: -50px;
 }
 
 label,option, input { font-size: 18px;}
@@ -32,7 +42,7 @@ table, th, td{
 	border-collapse: collapse;
 }
 
-td{
+td, th{
 	width: 200px;
 	padding: 5px;
 	text-align: center;
@@ -43,4 +53,14 @@ table tr:nth-child(even) {
 }
 table tr:nth-child(odd) {
     background-color: #;
+}
+
+.right{
+	position: absolute;
+	right: 0px;
+	margin: 10px;
+}
+
+a:visited {
+	color: #428bca;
 }

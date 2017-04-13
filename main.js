@@ -341,7 +341,6 @@ app.controller('app-controller', function($scope){
 	var department, position;
 
 	this.setDept = function(){
-		console.log('comes here');
 		this.department = document.getElementById('dept').value;
 	};
 
@@ -360,5 +359,10 @@ app.controller('app-controller', function($scope){
 			win.focus();
 		}
 	};
+
+	this.show = function()
+	{
+		this.display = true;
+	}
 
 });
