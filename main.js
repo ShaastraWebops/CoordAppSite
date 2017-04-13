@@ -37,7 +37,7 @@ var departments = {
 	},
 	"Sponsorship and Public Relations": {
 		name: "Spons",
-		emails: ["shubham", "aravind"]
+		emails: ["shubhamnandeshwar", "aravind"]
 	}, 
 	"Webops": {
 		name: "Webops",
