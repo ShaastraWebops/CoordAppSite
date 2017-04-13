@@ -124,6 +124,11 @@ var apps = {
 			app_name: "Shaastra18_Event_Coord_Application",
 			date: '15.04.2017'
 		},
+		"Flagship Events Head": {
+			name: "Flagship Events Head",
+			app_name: "Flagship_Events_Shaastra_2018",
+			date: '16.04.2017'
+		}
 	},
 
 	"Evolve": { 
