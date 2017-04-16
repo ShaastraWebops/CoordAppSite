@@ -13,7 +13,7 @@ var departments = {
 	},
 	"Events": {
 		name: "Events",
-		emails: ["satish", "ashmon"]
+		emails: ["sathish", "ashmon"]
 	},
 	"Finance": {
 		name: "Finance",
@@ -21,7 +21,7 @@ var departments = {
 	},
 	"Operations and Infrastructure Planning": {
 		name: "O&IP",
-		emails: ["shrigopala", "daanishga"]
+		emails: ["shrigopal", "daanish"]
 	},
 	"Media and Student Relations": {
 		name: "M&SR",
