@@ -3,12 +3,13 @@
 <head>
 	<title>Shaastra 2018 Coordinator Apps</title>
 	<link rel="stylesheet" type="text/css" href="main.css">
-	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body ng-controller='app-controller as Ctrl'>
 <div class="horizontal bgcolor">
-<img src="logo.png">
+<img src="logo.png" height="500px" width="800px">
  <h1 style="margin-top:-80px;">Shaastra 2018 Coordinator Apps</h1>
+ <br>
 	<div class="horizontal margin1">
 		<div class="item margin2">
 			<label style="margin-right : 15px;">Department :</label>
@@ -17,7 +18,7 @@
 				<option ng-repeat="(key,val) in Ctrl.depts">{{key}}</option>
 			</select>
 		</div>
-	
+
 		<div class="item margin2">
 			<label style="margin-right : 15px;">Position :</label>
 			<select id="position">
@@ -25,7 +26,7 @@
 				<option ng-repeat="(key,value) in Ctrl.app[Ctrl.department]">{{value.name}}</option>
 			</select>
 		</div>
-	
+
 		<a href="submit.html" target="_blank"><button class="btn btn-primary" style="font-size: 18px">Submit Application</button></a>
 		<button ng-click="Ctrl.showPDF()" style="width:150px; font-size:18px;"  class="btn btn-primary margin3">Get Application</button>
 
@@ -33,9 +34,10 @@
 		<p class="margin2"><b>Applcation for the post of Flagship Events Head under Events is now available. Contact the cores for more details.</b></p>
 
 	<div>
-	
+
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 	<script src="main.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </div>
 </body>
 </html>

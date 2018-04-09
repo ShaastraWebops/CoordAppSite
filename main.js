@@ -30,15 +30,15 @@ var departments = {
 	"QMS": {
 		name: "QMS",
 		emails: ["narayanan", "anjali.lal"]
-	}, 
+	},
 	"Shows and Exhibitions": {
-		name: "Shows", 
+		name: "Shows",
 		emails: ["hitesh.malla"]
 	},
 	"Sponsorship and Public Relations": {
 		name: "Spons",
 		emails: ["shubhamnandeshwar", "aravind"]
-	}, 
+	},
 	"Webops": {
 		name: "Webops",
 		emails: ["kulan", "vikranth"]
@@ -46,7 +46,7 @@ var departments = {
 };
 
 var apps = {
-	
+
 	"Concept and Design": {
 		"Creative branding and Design Strategist": {
 			name: "Creative branding and Design Strategist",
@@ -131,7 +131,7 @@ var apps = {
 		}
 	},
 
-	"Evolve": { 
+	"Evolve": {
 		"Summit Coordinator": {
 			name: "Summit Coordinator",
 			app_name: "Summit_CoordinatorApplicationQuestions_Shaastra2018",
@@ -176,7 +176,7 @@ var apps = {
 			date: '12.04.2017'
 		}
 	},
-	
+
 	"Operations and Infrastructure Planning":{
 		"Operations Head": {
 			name: "Operations Head",
@@ -342,6 +342,7 @@ app.controller('app-controller', function($scope){
 	this.app = apps;
 	this.path = '';
 	this.posts = [];
+	$scope.display = false;
 	this.initValue = "--Select Department--";
 	var department, position;
 
@@ -351,6 +352,15 @@ app.controller('app-controller', function($scope){
 
 	this.setPos = function(){
 		this.position = document.getElementById('position').value;
+	}
+
+	$scope.showDropdown = function() {
+		$scope.display = !$scope.display;
+		if ($scope.display) {
+			$scope.displayAttr = {"display": "block"}
+		} else {
+			$scope.displayAttr = {"display": "none"}
+		}
 	}
 
 	this.showPDF = function(){
