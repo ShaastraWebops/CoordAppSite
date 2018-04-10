@@ -1,7 +1,7 @@
 
 .horizontal{
 	text-align: center;
-	
+
 }
 
 .item{
@@ -37,6 +37,7 @@
 
 body{
 	background-color: #EDEDED;
+	min-height: 100vw;
 }
 label,option, input { font-size: 18px;}
 

@@ -333,10 +333,9 @@ var apps = {
 
 var path = '';
 
-var app = angular.module("CoordApps", []);
+var app = angular.module("CoordApps", ['ngMaterial']);
 
 app.controller('app-controller', function($scope){
-
 	this.display = false;
 	this.depts = departments;
 	this.app = apps;
@@ -345,34 +344,41 @@ app.controller('app-controller', function($scope){
 	$scope.display = false;
 	this.initValue = "--Select Department--";
 	var department, position;
+	this.department = '';
+	this.position = '';
+  //
+	// this.setDept = function(){
+	// 	this.department = document.getElementById('dept').value;
+	// };
+  //
+	// this.setPos = function(){
+	// 	this.position = document.getElementById('position').value;
+	// }
 
-	this.setDept = function(){
-		this.department = document.getElementById('dept').value;
-	};
-
-	this.setPos = function(){
-		this.position = document.getElementById('position').value;
-	}
-
-	$scope.showDropdown = function() {
-		$scope.display = !$scope.display;
-		if ($scope.display) {
-			$scope.displayAttr = {"display": "block"}
-		} else {
-			$scope.displayAttr = {"display": "none"}
-		}
-	}
+	// $scope.showDropdown = function() {
+	// 	$scope.display = !$scope.display;
+	// 	if ($scope.display) {
+	// 		$scope.displayAttr = {"display": "block"}
+	// 	} else {
+	// 		$scope.displayAttr = {"display": "none"}
+	// 	}
+	// }
 
 	this.showPDF = function(){
-		var d = document.getElementById('dept').value;
-		var p = document.getElementById('position').value;
-
-		if(!(d === '--Select Department--' && p === '--Select Position--'))
-		{
-			path = './uploads/'+departments[d].name+'/'+apps[d][p]["app_name"]+'.pdf';
-			var win = window.open(path, '_blank');
-			win.focus();
-		}
+		console.log(this.department);
+		console.log(this.position);
+		path = './uploads/'+departments[d].name+'/'+apps[d][p]["app_name"]+'.pdf';
+		var win = window.open(path, '_blank');
+		win.focus();
+		// var d = document.getElementById('dept').value;
+		// var p = document.getElementById('position').value;
+    //
+		// if(!(d === '--Select Department--' && p === '--Select Position--'))
+		// {
+		// 	path = './uploads/'+departments[d].name+'/'+apps[d][p]["app_name"]+'.pdf';
+		// 	var win = window.open(path, '_blank');
+		// 	win.focus();
+		// }
 	};
 
 	this.show = function()
