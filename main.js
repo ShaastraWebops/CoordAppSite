@@ -355,19 +355,8 @@ app.controller('app-controller', function($scope){
 	// 	this.position = document.getElementById('position').value;
 	// }
 
-	// $scope.showDropdown = function() {
-	// 	$scope.display = !$scope.display;
-	// 	if ($scope.display) {
-	// 		$scope.displayAttr = {"display": "block"}
-	// 	} else {
-	// 		$scope.displayAttr = {"display": "none"}
-	// 	}
-	// }
-
 	this.showPDF = function(){
-		console.log(this.department);
-		console.log(this.position);
-		path = './uploads/'+departments[d].name+'/'+apps[d][p]["app_name"]+'.pdf';
+		path = './uploads/'+$scope.department+'/'+$scope.position.app_name+'.pdf';
 		var win = window.open(path, '_blank');
 		win.focus();
 		// var d = document.getElementById('dept').value;
