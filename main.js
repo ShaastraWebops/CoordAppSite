@@ -1,47 +1,51 @@
 var departments = {
 	"Concept and Design" : {
 		name: "CD",
-		emails: ["anshulkumar", "vaibhav"]
+		emails: ["rakshanaa", "anuj"]
 	},
 	"Envisage": {
 		name: "Envisage",
-		emails: ["abhishek.kelkar", "deepanath"]
+		emails: ["adhitya", "pravallika"]
 	},
 	"Evolve": {
 		name: "Evolve",
-		emails: ["gv", "vamsikrishna"]
+		emails: ["lsk", "sdheeraj"]
 	},
 	"Events": {
 		name: "Events",
-		emails: ["sathish", "ashmon"]
+		emails: ["prateekm", "pooja","pruthviraj"]
 	},
 	"Finance": {
 		name: "Finance",
-		emails: ["vishakhvnadh", "nitin", "prashanth"]
+		emails: ["samanth", "sowmith"]
 	},
 	"Operations and Infrastructure Planning": {
 		name: "O&IP",
-		emails: ["shrigopal", "daanish"]
+		emails: ["ramtikar", "hiteshmeena"]
 	},
-	"Media and Student Relations": {
-		name: "M&SR",
-		emails: ["sundarsri", "amritesh"]
+	"Publicity": {
+		name: "Publicity",
+		emails: ["py", "parthd"]
+	},
+	"Hospitality": {
+		name: "Hospitality",
+		emails: ["py", "parthd"]
 	},
 	"QMS": {
 		name: "QMS",
-		emails: ["narayanan", "anjali.lal"]
+		emails: ["namitha", "shiva.b"]
 	},
 	"Shows and Exhibitions": {
 		name: "Shows",
-		emails: ["hitesh.malla"]
+		emails: ["ishasingh","meet"]
 	},
 	"Sponsorship and Public Relations": {
 		name: "Spons",
-		emails: ["shubhamnandeshwar", "aravind"]
+		emails: ["siddhesh", "sabyasachi"]
 	},
 	"Webops": {
 		name: "Webops",
-		emails: ["kulan", "vikranth"]
+		emails: ["akshayanand", "nilay"]
 	}
 };
 
@@ -60,12 +64,12 @@ var apps = {
 		},
 		"Creative Ambience Head": {
 			name: "Creative Ambience Head",
-			app_name: "Creative_Ambience_Head_Shaastra2018",
+			app_name: "Head_Creative Ambience_Shaastra2019",
 			date: '16.04.2017'
 		},
 		"Creative Ambience Coordinator": {
 			name: "Creative Ambience Coordinator",
-			app_name: "Creative_Ambience_Coordinator_Shaastra2018",
+			app_name: "Coordinator_Creative Ambience_Shaastra2019.docx-3_merged",
 			date: '16.04.2017'
 		},
 		"VFX and Video Editing Head": {
@@ -91,42 +95,67 @@ var apps = {
 	},
 
 	"Envisage":{
-		"Super Coordinator": {
-			name: "Super Coordinator",
-			app_name: "Envisage_Super_Coordinator_Application_Shaastra2018",
-			date: '12.04.2017'
-		},
-		"Tech Ambience": {
-			name: "Tech Ambience",
-			app_name: "Envisage_Coordinator_Application_Shaastra2018",
-			date: '16.04.2017'
-		},
-		"Mentor": {
-			name: "Mentor",
-			app_name: "Envisage_Mentor_Application_Shaastra2018",
-			date: '16.04.2017'
-		},
 		"Coordinator Application": {
 			name: "Coordinator Application",
-			app_name: "Envisage_Coordinator_Application_Shaastra2018",
+			app_name: "Shaastra2019_Envisage_CoordinatorApplication",
 			date: '16.04.2017'
 		}
 	},
 
 	"Events":{
-		"Events Head": {
-			name: "Events Head",
-			app_name: "Shaastra18_Event_Head_Application",
+		"Aerofest Head": {
+			name: "Aerofest Head",
+			app_name: "Aerofest Head Application Shaastra 19",
 			date: '16.04.2017'
 		},
-		"Events Coordinator": {
-			name: "Events Coordinator",
-			app_name: "Shaastra18_Event_Coord_Application",
-			date: '15.04.2017'
+		"BEvents Head": {
+			name: "Bevents Head",
+			app_name: "BEvents Head Application Shaastra19",
+			date: '16.04.2017'
 		},
-		"Flagship Events Head": {
-			name: "Flagship Events Head",
-			app_name: "Flagship_Events_Shaastra_2018",
+		"Coding Head": {
+			name: "Coding Head",
+			app_name: "Coding Head Application Shaastra 19",
+			date: '16.04.2017'
+		},
+		"D_B Head": {
+			name: "D_B Head",
+			app_name: "D_B Head Application Shaastra 19",
+			date: '16.04.2017'
+		},
+		"Elecfest Head": {
+			name: "Elecfest Head",
+			app_name: "Elecfest Head Application Shaastra 19",
+			date: '16.04.2017'
+		},
+		"Flagships Head": {
+			name: "Flagships Head",
+			app_name: "Flagships Head Application Shaastra 19",
+			date: '16.04.2017'
+		},
+		"I_Q Head": {
+			name: "I_Q Head",
+			app_name: "I_Q Head Application Shaastra 19",
+			date: '16.04.2017'
+		},
+		"REvents Head": {
+			name: "REvents Head",
+			app_name: "REvents Head Application Shaastra19",
+			date: '16.04.2017'
+		},
+		"Strategist Head": {
+			name: "Strategist Head",
+			app_name: "Strategist Application Shaastra 19",
+			date: '16.04.2017'
+		},
+		"TechSoc Head": {
+			name: "TechSoc Head",
+			app_name: "TechSoc Head Application Shaastra 19",
+			date: '16.04.2017'
+		},
+		"Workshops Head": {
+			name: "Workshops Head",
+			app_name: "Workshops Head Application Shaastra 19",
 			date: '16.04.2017'
 		}
 	},
@@ -134,32 +163,32 @@ var apps = {
 	"Evolve": {
 		"Summit Coordinator": {
 			name: "Summit Coordinator",
-			app_name: "Summit_CoordinatorApplicationQuestions_Shaastra2018",
+			app_name: "Shaastra 2019_Evolve_Summit_CoordinatorApplication",
 			date: '16.04.2017'
 		},
 		"Spotlight Coordinator": {
 			name: "Spotlight Coordinator",
-			app_name: "Spotlight_CoordinatorApplicationQuestions_Shaastra2018",
+			app_name: "Shaastra 2019_Evolve_Spotlight_CoordinatorApplication",
 			date: '16.04.2017'
 		},
-		"New Department Coordinator": {
-			name: "New Department Coordinator",
-			app_name: "DepartmentX_CoordinatorApplicationQuestions_Shaastra2018",
+		"Relaunch Coordinator": {
+			name: "Relaunch Coordinator",
+			app_name: "Shaastra 2019_Evolve_Relaunch_CoordinatorApplication",
 			date: '16.04.2017'
 		},
 		"Summit Super Coordinator": {
 			name: "Summit Super Coordinator",
-			app_name: "Summit_CoordinatorApplicationQuestions_Shaastra2018",
+			app_name: "Shaastra 2019_Evolve_Summit_SuperCoordinatorApplication",
 			date: '14.04.2017'
 		},
 		"Spotlight Super Coordinator": {
 			name: "Spotlight Super Coordinator",
-			app_name: "Spotlight_CoordinatorApplicationQuestions_Shaastra2018",
+			app_name: "Shaastra 2019_Evolve_Spotlight_CoordinatorApplication",
 			date: '14.04.2017'
 		},
-		"New Department Super Coordinator": {
-			name: "New Department Super Coordinator",
-			app_name: "DepartmentX_CoordinatorApplicationQuestions_Shaastra2018",
+		"Relaunch Super Coordinator": {
+			name: "Relaunch Super Coordinator",
+			app_name: "Shaastra 2019_Evolve_Relaunch_CoordinatorApplication",
 			date: '14.04.2017'
 		}
 	},
@@ -167,12 +196,12 @@ var apps = {
 	"Finance":{
 		"Finance Coordinator": {
 			name: "Finance Coordinator",
-			app_name: "Financeapplication",
+			app_name: "Coordinator_Finance_Shaastra",
 			date: '16.04.2017'
 		},
 		"Finance Manager" : {
 			name: "Finance Manager",
-			app_name: "Financeapplication",
+			app_name: "Manager_Finance_Shaastra",
 			date: '12.04.2017'
 		}
 	},
@@ -180,47 +209,61 @@ var apps = {
 	"Operations and Infrastructure Planning":{
 		"Operations Head": {
 			name: "Operations Head",
-			app_name: "O&IP_OperationsHead_Application_Shaastra2018",
+			app_name: "OPERATONS HEAD APPLICATION",
 			date: '13.04.2017'
 		},
 		"Catering Head": {
 			name: "Catering Head",
-			app_name: "O&IP_CateringHead_Application_Shaastra2018",
+			app_name: "CATERING HEAD APPLICATION",
 			date: '13.04.2017'
 		},
 		"General Arrangements Coordinator": {
 			name: "General Arrangements Coordinator",
-			app_name: "O&IP_GerneralArrangementsCoordinator_Application_Shaastra2018",
+			app_name: "GA COORDINATOR APPLICATION ",
 			date: '16.04.2017'
 		},
 		"Catering Coordinator": {
 			name: "Catering Coordinator",
-			app_name: "O&IP_CateringCoordinator_Application_Shaastra2018",
+			app_name: "CATERING COORDINATOR APPLICATION",
 			date: '16.04.2017'
 		}
 	},
 
-	"Media and Student Relations":{
+	"Publicity":{
 		"Coordinator Application": {
 			name: "Coordinator Application",
-			app_name: "M_SR_Coordinator_Application_Shaastra2018",
+			app_name: "Shaastra 2019 Publicity Coordinator Application",
 			date: '16.04.2017'
 		},
-		/*"Strategist": {
+		"Strategist": {
 			name: "Strategist",
-			app_name: ""
-		}*/
+			app_name: "Shaastra 2019 Publicity Strategist Application",
+			date: '16.04.2017'
+		}
+	},
+
+	"Hospitality":{
+		"Coordinator Application": {
+			name: "Coordinator Application",
+			app_name: "Hospitality_Coordinator_Shaastra19",
+			date: '16.04.2017'
+		},
+		"Head": {
+			name: "Head",
+			app_name: "Hospitality_Head_Shaastra19",
+			date: '16.04.2017'
+		}
 	},
 
 	"QMS":{
-		"QMS Coordinator": {
-			name: "QMS Coordinator",
-			app_name: "qms_coordinator_application_shaastra2018",
+		"QMS Asst Manager": {
+			name: "QMS Asst Manager",
+			app_name: "QMS_Asst Manager ( Event Verticals)",
 			date: '13.04.2017'
 		},
-		"QMS Executive": {
-			name: "QMS Executive",
-			app_name: "qms_executive_application_shaastra2018",
+		"QMS Manager": {
+			name: "QMS Manager",
+			app_name: "QMS_Manager ( Departments)",
 			date: '13.04.2017'
 		}
 	},
@@ -228,37 +271,37 @@ var apps = {
 	"Shows and Exhibitions":{
 		"Shows Coordinator": {
 			name: "Shows Coordinator",
-			app_name: "Shows",
+			app_name: "Shows_S_E_Coordinator",
 			date: '14.04.2017'
 		},
 		"Exhibitions Super Coordinator": {
 			name: "Exhibitions Super Coordinator",
-			app_name: "Exhibitions_Super_Coordinator",
+			app_name: "Exhibitions_S_E_Supercoordinator",
 			date: '14.04.2017'
 		},
 		"Tech and Innovation Fair Super Coordinator": {
 			name: "Tech and Innovation Fair Super Coordinator",
-			app_name: "Tech_n_Innovation_Fair_Super_Coordinator",
+			app_name: "TIF_S_E_Supercoordinator",
 			date: '14.04.2017'
 		},
 		"Tech Creation Super Coordinator": {
 			name: "Tech Creation Super Coordinator",
-			app_name: "Techcreation_Super_Coordinator",
+			app_name: "Techcreation_S_E_Supercoordinator",
 			date: '14.04.2017'
 		},
 		"Exhibitions Coordinator": {
 			name: "Exhibitions Coordinator",
-			app_name: "Exhibitions_Coordinator",
+			app_name: "Exhibitions_S_E_Coordinator",
 			date: '16.04.2017'
 		},
 		"Tech and Innovation Fair Coordinator": {
 			name: "Tech and Innovation Fair Coordinator",
-			app_name: "Tech_n_Innovation_Fair_Coordinator",
+			app_name: "TIF_S_E_Coordinator",
 			date: '16.04.2017'
 		},
 		"Tech Creation Coordinator": {
 			name: "Tech Creation Coordinator",
-			app_name: "Techcreation_Coordinator",
+			app_name: "Techcreation_S_E_Coordinator",
 			date: '16.04.2017'
 		}
 	},
@@ -266,67 +309,51 @@ var apps = {
 	"Sponsorship and Public Relations":{
 		"Corporate Relations": {
 			name: "Corporate Relations",
-			app_name: "Corporate_Relations_Spons_Shaastra 2018",
+			app_name: "Corporate relations_Sponsorship _ PR_Coordinator",
 			date: '14.04.2017'
-		},
-		"PR Executives": {
+		}
+		/*"PR Executives": {
 			name: "PR Executives",
 			app_name: "PR_Executive_Spons_Shaastra 2018",
 			date: '18.04.2017'
-		},
-		"Engage and Endaevour": {
+		}*/
+	/*	"Engage and Endaevour": {
 			name: "Engage and Endaevour",
 			app_name: "Engage_Endeavour_Spons_Shaastra 2018",
 			date: '15.04.2017'
-		}
+		}*/
 	},
 
 	"Webops":{
 		"Frontend Coordinator": {
 			name: "Frontend Coordinator",
-			app_name: "Shaastra18_Webops_Frontend",
+			app_name: "Shaastra_2019_WebOps_Frontend_Application",
 			date: '27.05.2017'
 		},
 		"Backend Coordinator": {
 			name: "Backend Coordinator",
-			app_name: "Shaastra18_Webops_Backend",
-			date: '27.05.2017'
-		},
-		"Mobile App Coordinator": {
-			name: "Mobile App Coordinator",
-			app_name: "Shaastra18_Webops_MobileApp",
-			date: '27.05.2017'
-		},
-		"Software Development Coordinator": {
-			name: "Software Development Coordinator",
-			app_name: "Shaastra18_Webops_SoftDev",
+			app_name: "Shaastra_2019_WebOps_BackendApplication",
 			date: '27.05.2017'
 		},
 		"Frontend Super Coordinator": {
 			name: "Frontend Super Coordinator",
-			app_name: "Shaastra18_Webops_Frontend",
+			app_name: "Shaastra_2019_WebOps_Frontend_Application",
 			date: '16.04.2017'
 		},
 		"Backend Super Coordinator": {
 			name: "Backend Super Coordinator",
-			app_name: "Shaastra18_Webops_Backend",
+			app_name: "Shaastra_2019_WebOps_BackendApplication",
 			date: '16.04.2017'
 		},
-		"Mobile App Super Coordinator": {
-			name: "Mobile App Super Coordinator",
-			app_name: "Shaastra18_Webops_MobileApp",
+		"MobOps Super Coordinator": {
+			name: "MobOps Super Coordinator",
+			app_name: "Shaastra_2019_WebOps_Hybrid_Application",
 			date: '16.04.2017'
 		},
-		"Software Development Super Coordinator": {
-			name: "Software Development Super Coordinator",
-			app_name: "Shaastra18_Webops_SoftDev",
+		"MobOps Coordinator": {
+			name: "MobOps Coordinator",
+			app_name: "Shaastra_2019_WebOps_Hybrid_Application",
 			date: '16.04.2017'
-		}
-	},
-	"ICT": {
-		"ICT Coordinator": {
-			name: "ICT Coordinator",
-			app_name: "ICT_Coordinator_Application"
 		}
 	}
 }
@@ -335,11 +362,11 @@ var path = '';
 
 var app = angular.module("CoordApps", ['ngMaterial']);
 
-app.controller('app-controller', function($scope){
+app.controller('app-controller', function($scope,$window){
 	this.display = false;
 	this.depts = departments;
 	this.app = apps;
-	this.path = '';
+	this.path = 'http://res.cloudinary.com/shaastra-apps/image/upload/';
 	this.posts = [];
 	$scope.display = false;
 	this.initValue = "--Select Department--";
@@ -356,9 +383,31 @@ app.controller('app-controller', function($scope){
 	// }
 
 	this.showPDF = function(){
-		path = './uploads/'+$scope.department+'/'+$scope.position.app_name+'.pdf';
-		var win = window.open(path, '_blank');
-		win.focus();
+		var app_name = '';
+		var j=0;
+		for (var i=0; i<$scope.position.app_name.length; i++) {
+			if ($scope.position.app_name[i] === ' ') {
+				if (j>0) {
+					if (app_name[j-1] === '_') {
+						continue;
+					}
+				}
+				app_name = app_name + '_';
+				j++;
+			} else if ($scope.position.app_name[i] === '(' || $scope.position.app_name[i] === ')') {
+				continue;
+			} else {
+				app_name = app_name + $scope.position.app_name[i];
+				j++;
+			}
+		}
+		if (app_name[app_name.length-1] === '_') {
+			app_name = app_name.slice(0,-1);
+		}
+		$window.open(this.path + app_name +'.pdf', '_blank');
+		//path = './uploads/'+$scope.department+'/'+$scope.position.app_name+'.pdf';
+		//var win = window.open(path, '_blank');
+		//win.focus();
 		// var d = document.getElementById('dept').value;
 		// var p = document.getElementById('position').value;
     //
