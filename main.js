@@ -311,17 +311,17 @@ var apps = {
 			name: "Corporate Relations",
 			app_name: "Corporate relations_Sponsorship _ PR_Coordinator",
 			date: '14.04.2017'
-		}
-		/*"PR Executives": {
+		},
+		"PR Executives": {
 			name: "PR Executives",
-			app_name: "PR_Executive_Spons_Shaastra 2018",
+			app_name: "PR Executive_Sponsorship _ PR_Coordinator",
 			date: '18.04.2017'
-		}*/
-	/*	"Engage and Endaevour": {
+		},
+		"Engage and Endaevour": {
 			name: "Engage and Endaevour",
-			app_name: "Engage_Endeavour_Spons_Shaastra 2018",
+			app_name: "Engage-Endeavour_Sponsorship _ PR",
 			date: '15.04.2017'
-		}*/
+		}
 	},
 
 	"Webops":{
