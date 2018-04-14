@@ -33,6 +33,10 @@ body {
 }
 
 @media (max-width: 767px) {
+  .getappbutton{
+    margin-left:25vw;
+    width:50vw;
+  }
   .slogo{
     width:100%;
     height:80%;
@@ -63,6 +67,9 @@ body {
 
 
 @media (min-width: 768px) {
+  .getappbutton{
+    margin-left:9vw;
+  }
   .selectbox{
     font-size:2em;width:30vw;
   }
