@@ -52,14 +52,14 @@ var departments = {
 var apps = {
 
 	"Concept and Design": {
-		"Creative branding and Design Strategist": {
-			name: "Creative branding and Design Strategist",
-			app_name: 'Creative_Branding_and_Design_Strategist_Shaastra2018',
+		"Creative branding and Design Head": {
+			name: "Creative branding and Design Head",
+			app_name: 'Head_Creative Branding _ Design_Shaastra2019',
 			date: '16.04.2017'
 		},
 		"Creative branding and Design Coordinator": {
 			name: "Creative branding and Design Coordinator",
-			app_name: "Creative_Branding_and_Design_Coordinator_Shaastra2018",
+			app_name: "Coordinator_Creative Branding and Design_Shaastra2019",
 			date: '16.04.2017'
 		},
 		"Creative Ambience Head": {
@@ -74,22 +74,22 @@ var apps = {
 		},
 		"VFX and Video Editing Head": {
 			name: "VFX and Video Editing Head",
-			app_name: "VFX_and_Video_Editing_Head_Shaastra2018",
+			app_name: "Head_VFX And Video Editing_Shaastra2019",
 			date: '16.04.2017'
 		},
 		"VFX and Video Editing Coordinator": {
 			name: "VFX and Video Editing Coordinator",
-			app_name: "VFX_and_Video_Editing_Coordinator_Shaastra2018",
+			app_name: "Coordinator_VFX And Video Editing_Shaastra2019",
 			date: '16.04.2017'
 		},
-		"Media and Videography Head": {
-			name: "Media and Videography Head",
-			app_name: "Photography_and_Videography_Head_Shaastra2018",
+		"Media Head": {
+			name: "Media Head",
+			app_name: "Head_Media_Shaastra2019",
 			date: '16.04.2017'
 		},
-		"Media and Videography Coordinator": {
-			name: "Media and Videography Coordinator",
-			app_name: "Photography_and_Videography_Coordinator_Shaastra2018",
+		"Media Coordinator": {
+			name: "Media Coordinator",
+			app_name: "Coordinator_Media_Shaastra2019",
 			date: '16.04.2017'
 		}
 	},
