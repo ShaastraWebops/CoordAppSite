@@ -33,6 +33,13 @@ body {
 }
 
 @media (max-width: 767px) {
+  .mobile-only {
+        display:block !important;
+    }
+
+    .desktop-only {
+        display:none !important;
+    }
   .getappbutton{
     margin-left:25vw;
     width:50vw;
@@ -48,7 +55,7 @@ body {
     position: relative;
     font-family: 'Source Sans Pro';
     font-weight: 300;
-    background-color: #D3D3D3;
+    /*background-color: #D3D3D3;*/
   }
   .stitle{
     color: black;
@@ -67,11 +74,17 @@ body {
 
 
 @media (min-width: 768px) {
+  .desktop-only {
+        display:block !important;
+    }
+    .mobile-only {
+          display:none !important;
+      }
   .getappbutton{
     margin-left:9vw;
   }
   .selectbox{
-    font-size:2em;width:30vw;
+    font-size:2.2em;width:30vw;
   }
   .stitle{
     color: black;

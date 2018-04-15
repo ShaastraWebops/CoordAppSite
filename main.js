@@ -103,60 +103,17 @@ var apps = {
 	},
 
 	"Events":{
-		"Aerofest Head": {
-			name: "Aerofest Head",
-			app_name: "Aerofest Head Application Shaastra 19",
-			date: '16.04.2017'
+		"Coordinators":{
+			name: "Coordinators"
 		},
-		"BEvents Head": {
-			name: "Bevents Head",
-			app_name: "BEvents Head Application Shaastra19",
-			date: '16.04.2017'
+		"Events Head":{
+			name: "Events Head"
 		},
-		"Coding Head": {
-			name: "Coding Head",
-			app_name: "Coding Head Application Shaastra 19",
-			date: '16.04.2017'
+		"Techsoc":{
+			name: "Techsoc"
 		},
-		"D_B Head": {
-			name: "D_B Head",
-			app_name: "D_B Head Application Shaastra 19",
-			date: '16.04.2017'
-		},
-		"Elecfest Head": {
-			name: "Elecfest Head",
-			app_name: "Elecfest Head Application Shaastra 19",
-			date: '16.04.2017'
-		},
-		"Flagships Head": {
-			name: "Flagships Head",
-			app_name: "Flagships Head Application Shaastra 19",
-			date: '16.04.2017'
-		},
-		"I_Q Head": {
-			name: "I_Q Head",
-			app_name: "I_Q Head Application Shaastra 19",
-			date: '16.04.2017'
-		},
-		"REvents Head": {
-			name: "REvents Head",
-			app_name: "REvents Head Application Shaastra19",
-			date: '16.04.2017'
-		},
-		"Strategist Head": {
-			name: "Strategist Head",
-			app_name: "Strategist Application Shaastra 19",
-			date: '16.04.2017'
-		},
-		"TechSoc Head": {
-			name: "TechSoc Head",
-			app_name: "TechSoc Head Application Shaastra 19",
-			date: '16.04.2017'
-		},
-		"Workshops Head": {
-			name: "Workshops Head",
-			app_name: "Workshops Head Application Shaastra 19",
-			date: '16.04.2017'
+		"Strategists":{
+			name: "Startegists"
 		}
 	},
 
@@ -358,6 +315,77 @@ var apps = {
 	}
 }
 
+var events = {
+	"Coordinators":{
+		"Events Coordinator": {
+			name: "Events Coordinator",
+			app_name: "Events Coordinator Application Shaastra 19",
+			date: '16.04.2017'
+		}
+	},
+	"Events Head":{
+		"Aerofest Head": {
+			name: "Aerofest Head",
+			app_name: "Aerofest Head Application Shaastra 19",
+			date: '16.04.2017'
+		},
+		"BEvents Head": {
+			name: "Bevents Head",
+			app_name: "BEvents Head Application Shaastra19",
+			date: '16.04.2017'
+		},
+		"Coding Head": {
+			name: "Coding Head",
+			app_name: "Coding Head Application Shaastra 19",
+			date: '16.04.2017'
+		},
+		"D_B Head": {
+			name: "D_B Head",
+			app_name: "D_B Head Application Shaastra 19",
+			date: '16.04.2017'
+		},
+		"Elecfest Head": {
+			name: "Elecfest Head",
+			app_name: "Elecfest Head Application Shaastra 19",
+			date: '16.04.2017'
+		},
+		"Flagships Head": {
+			name: "Flagships Head",
+			app_name: "Flagships Head Application Shaastra 19",
+			date: '16.04.2017'
+		},
+		"I_Q Head": {
+			name: "I_Q Head",
+			app_name: "I_Q Head Application Shaastra 19",
+			date: '16.04.2017'
+		},
+		"REvents Head": {
+			name: "REvents Head",
+			app_name: "REvents Head Application Shaastra19",
+			date: '16.04.2017'
+		},
+		"Workshops Head": {
+			name: "Workshops Head",
+			app_name: "Workshops Head Application Shaastra 19",
+			date: '16.04.2017'
+		}
+	},
+	"Techsoc":{
+		"TechSoc Head": {
+			name: "TechSoc Head",
+			app_name: "TechSoc Head Application Shaastra 19",
+			date: '16.04.2017'
+		},
+	},
+	"Strategists":{
+		"Strategist Head": {
+			name: "Strategist Head",
+			app_name: "Strategist Application Shaastra 19",
+			date: '16.04.2017'
+		}
+	}
+};
+
 var path = '';
 
 var app = angular.module("CoordApps", ['ngMaterial']);
@@ -366,6 +394,7 @@ app.controller('app-controller', function($scope,$window){
 	this.display = false;
 	this.depts = departments;
 	this.app = apps;
+	this.event = events;
 	this.path = 'http://res.cloudinary.com/shaastra-apps/image/upload/';
 	this.posts = [];
 	$scope.display = false;
@@ -373,6 +402,7 @@ app.controller('app-controller', function($scope,$window){
 	var department, position;
 	this.department = '';
 	this.position = '';
+	this.vertical = '';
   //
 	// this.setDept = function(){
 	// 	this.department = document.getElementById('dept').value;
@@ -385,6 +415,10 @@ app.controller('app-controller', function($scope,$window){
 	this.showPDF = function(){
 		var app_name = '';
 		var j=0;
+		if($scope.vertical != null)
+		{
+			$scope.position = $scope.vertical;
+		}
 		for (var i=0; i<$scope.position.app_name.length; i++) {
 			if ($scope.position.app_name[i] === ' ') {
 				if (j>0) {
